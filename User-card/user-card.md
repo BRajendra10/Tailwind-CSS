@@ -11,14 +11,6 @@ This is my very first project using Tailwind CSS — a utility-first front-end f
 - Responsive, mobile-friendly layout using Flexbox.
 - Clean, minimalistic iconography with Remix Icons.
 
-## 🚀 Why Tailwind?
-
-- Unlike traditional CSS, Tailwind lets me:
-- Style directly in HTML using utility classes.
-- Avoid writing custom CSS for most parts.
-- Focus more on design and responsiveness.
-- Build faster and iterate quicker.
-
 ## 📸 Screenshot
 
 ![Output](https://github.com/BRajendra10/Tailwind-CSS/blob/c8d71ad9de06a49a3dbbf2aebd09906a0a721ec5/User-card/assets/user-card-image.png)
