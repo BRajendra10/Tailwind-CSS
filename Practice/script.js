@@ -18,4 +18,5 @@ product_btn.addEventListener('click', () => {
     let response = await fetch("https://dummyjson.com/products");
     let data = await response.json();
     let products = await data.products;
+    console.log(products)
 })();
