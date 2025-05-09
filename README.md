@@ -1,5 +1,7 @@
 # Tailwind-CSS
 
+---
+
 # 🌟 Tailwind CSS Profile Card UI - First Step into Utility-First Design
 
 This is my very first project using Tailwind CSS — a utility-first front-end framework that completely changed how I approach UI development.
