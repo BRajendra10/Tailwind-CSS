@@ -30,6 +30,6 @@ This project showcases a modern, responsive Pricing Cards UI built using Tailwin
 
 ## 📸 Preview
 
-- Comming soon
+![Output](https://github.com/BRajendra10/Tailwind-CSS/blob/dce13e512492f68c59543c7ead88031b417b5ca8/Pricing-card/Pricing-cards.gif)
 
 ---
