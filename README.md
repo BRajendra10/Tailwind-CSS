@@ -16,7 +16,7 @@ The layout is designed to be fully responsive and mobile-friendly, using Flexbox
 
 ---
 
-# 💳 Responsive Pricing Cards with Tailwind CSS
+# 💳 Responsive Pricing Cards
 
 This project showcases a modern, responsive Pricing Cards UI built using Tailwind CSS. It's designed to demonstrate clean layout structure, mobile responsiveness, and a visually appealing pricing section commonly used on landing pages and SaaS websites.
 
