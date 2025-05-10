@@ -33,3 +33,22 @@ This project showcases a modern, responsive Pricing Cards UI built using Tailwin
 ![Output](https://github.com/BRajendra10/Tailwind-CSS/blob/dce13e512492f68c59543c7ead88031b417b5ca8/Pricing-card/Pricing-cards.gif)
 
 ---
+
+# 📝 Blog Post Project
+
+A clean and responsive **Blog Post UI** built using **Tailwind CSS** 💨  
+This project showcases modern UI design principles and is perfect for learning layout structuring, typography, and responsiveness with Tailwind.
+
+## 🚀 Features
+
+- 🎨 Minimal & modern design  
+- 💡 Responsive layout for mobile & desktop  
+- 🧱 Tailwind CSS utility-first styling  
+- ✍️ Blog card with title, image, and description  
+- 🌙 Dark mode ready (optional enhancement)
+
+## 📸 Preview
+
+- Comming soon
+
+---
