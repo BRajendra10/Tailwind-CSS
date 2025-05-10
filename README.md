@@ -49,6 +49,6 @@ This project showcases modern UI design principles and is perfect for learning l
 
 ## 📸 Preview
 
-- Comming soon
+![Output](https://github.com/BRajendra10/Tailwind-CSS/blob/e33121f5440b198327365035ae6792200b2e035c/Blog-post/assets/blog-post.png)
 
 ---
