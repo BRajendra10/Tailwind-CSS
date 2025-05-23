@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code snippet container with copy button</title>
+
+    <!-- Tailwind-css cdn linked  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Remix cdn linked -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css" integrity="sha512-hH7VMMVfPgfkpYx2GazOEG6RrYM+y8cS7FzccwBTWQeyhPv01XYk0MVcuhh4EAimOELWvqKjhNwes/UsYoyN6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
+    <div class="flex justify-center items-center w-full h-screen">
+        <div class="w-[800px] h-[300px] bg-gray-900 rounded-lg">
+            <nav class="flex justify-between items-center bg-gray-300 rounded-t-lg p-2">
+                <h1 class="text-lg">Code:</h1>
+                <button class="border-1 px-1 rounded-sm" type="button"><i class="ri-file-copy-line"></i></button>
+            </nav>
+            <pre class="p-2">
+                <code>
+                    
+                </code>
+            </pre>
+        </div>
+    </div>
+
 </body>
 </html>
