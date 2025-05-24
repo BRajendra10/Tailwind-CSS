@@ -14,18 +14,26 @@
 <body>
     
     <div class="flex justify-center items-center w-full h-screen">
-        <div class="w-[800px] h-[300px] bg-gray-900 rounded-lg">
+        <div class="w-[800px] h-fit bg-gray-900 rounded-lg">
             <nav class="flex justify-between items-center bg-gray-300 rounded-t-lg p-2">
                 <h1 class="text-lg">Code:</h1>
-                <button class="border-1 px-1 rounded-sm" type="button"><i class="ri-file-copy-line"></i></button>
+                <button class="border-1 px-1 hover:bg-gray-800 hover:text-gray-100 rounded-sm" type="button" id="button"><i class="ri-file-copy-line"></i></button>
             </nav>
-            <pre class="p-2">
-                <code>
-                    
+            <div class="flex justify-start items-starts p-2">
+                <code class="w-full p-2">
+                    <span class="text-blue-200">Background-color:</span> <span class="text-red-300">red;</span><br>
+                    <span class="text-blue-200">border-radius:</span> <span class="text-red-300">30px;</span><br>
+                    <span class="text-blue-200">box-shadow:</span> <span class="text-red-300">41px 41px 82px #bebebe,</span><br>
+                    <span class="text-red-300">-41px -41px 82px #ffffff;</span>
                 </code>
-            </pre>
+            </div>
         </div>
     </div>
 
+    <script>
+        document.getElementById('button').addEventListener("click", () =>{
+            navigator.clipboard.writeText(document.querySelector("code").innerText);
+        })
+    </script>
 </body>
 </html>
