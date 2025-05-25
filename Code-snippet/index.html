@@ -30,10 +30,7 @@
             </nav>
             <div class="flex justify-start items-starts p-2">
                 <code class="w-full text-gray-50 p-2" contenteditable="true" spellcheck="true">
-                    <!-- background-color: red; <br>
-                    border-radius: 30px; <br>
-                    box-shadow: 41px 41px 82px #bebebe,
-                    -41px -41px 82px #ffffff; -->
+                    <!-- code snippet goes here -->
                 </code>
             </div>
         </div>
@@ -43,17 +40,37 @@
         let code_data = JSON.parse(localStorage.getItem("code")) || [];
 
         (function(){
-            code_data = `background-color: red;
+            code_data = [];
+            localStorage.setItem("code", JSON.stringify(code_data));
+
+            code = `background-color: red;
                         border-radius: 30px;
                         box-shadow: 41px 41px 82px #bebebe,
                         -41px -41px 82px #ffffff;`;
             
+            code_data.push(code);
             localStorage.setItem("code", JSON.stringify(code_data));
             document.querySelector("code").innerText = code_data;
         })();
 
+        function setCode_to_localStorage(){
+            code_data = document.querySelector("code").innerText;
+
+            localStorage.setItem("code", JSON.stringify(code_data));
+
+            code_data = JSON.parse(localStorage.getItem("code"));            
+            document.querySelector("code").innerText = code_data;
+        }
+
         document.getElementById('btn-copy').addEventListener("click", () =>{
             navigator.clipboard.writeText(document.querySelector("code").innerText)
+        })
+
+        document.getElementById('btn-save').addEventListener("click", () =>{
+            code_data = [];
+            localStorage.setItem("code", JSON.stringify(code_data));
+
+            setCode_to_localStorage();
         })
     </script>
 </body>
