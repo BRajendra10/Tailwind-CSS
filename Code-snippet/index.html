@@ -14,7 +14,7 @@
 <body>
     
     <div class="flex justify-center items-center w-full h-screen">
-        <div class="md:w-[600px] lg:w-[800px] h-fit bg-gray-900 rounded-lg">
+        <div class="md:w-[660px] lg:w-[800px] h-fit bg-gray-900 rounded-lg">
             <nav class="flex justify-between items-center bg-gray-300 rounded-t-lg p-2">
                 <h1 class="text-lg">Code:</h1>
                 <div class="flex">
@@ -27,22 +27,33 @@
                         <span class="hidden group-hover:inline duration-700">copy</span>
                     </button>
                 </div>
-
             </nav>
             <div class="flex justify-start items-starts p-2">
                 <code class="w-full text-gray-50 p-2" contenteditable="true" spellcheck="true">
-                    background-color: red; <br>
+                    <!-- background-color: red; <br>
                     border-radius: 30px; <br>
                     box-shadow: 41px 41px 82px #bebebe,
-                    -41px -41px 82px #ffffff;
+                    -41px -41px 82px #ffffff; -->
                 </code>
             </div>
         </div>
     </div>
 
     <script>
+        let code_data = JSON.parse(localStorage.getItem("code")) || [];
+
+        (function(){
+            code_data = `background-color: red;
+                        border-radius: 30px;
+                        box-shadow: 41px 41px 82px #bebebe,
+                        -41px -41px 82px #ffffff;`;
+            
+            localStorage.setItem("code", JSON.stringify(code_data));
+            document.querySelector("code").innerText = code_data;
+        })();
+
         document.getElementById('btn-copy').addEventListener("click", () =>{
-            navigator.clipboard.writeText(document.querySelector("code").innerText);
+            navigator.clipboard.writeText(document.querySelector("code").innerText)
         })
     </script>
 </body>
