@@ -14,16 +14,26 @@
 <body>
     
     <div class="flex justify-center items-center w-full h-screen">
-        <div class="w-[800px] h-fit bg-gray-900 rounded-lg">
+        <div class="md:w-[600px] lg:w-[800px] h-fit bg-gray-900 rounded-lg">
             <nav class="flex justify-between items-center bg-gray-300 rounded-t-lg p-2">
                 <h1 class="text-lg">Code:</h1>
-                <button class="border-1 px-1 hover:bg-gray-800 hover:text-gray-100 rounded-sm" type="button" id="button"><i class="ri-file-copy-line"></i></button>
+                <div class="flex">
+                    <button class="group border hover:bg-gray-800 hover:text-gray-100 rounded-sm px-1" type="button" id="btn-save">
+                        <i class="ri-file-copy-line"></i>
+                        <span class="hidden group-hover:inline duration-700">save</span>
+                    </button>
+                    <button class="group border hover:bg-gray-800 hover:text-gray-100 rounded-sm px-1 ml-2" type="button" id="btn-copy">
+                        <i class="ri-file-copy-line"></i>
+                        <span class="hidden group-hover:inline duration-700">copy</span>
+                    </button>
+                </div>
+
             </nav>
             <div class="flex justify-start items-starts p-2">
                 <code class="w-full text-gray-50 p-2" contenteditable="true" spellcheck="true">
                     background-color: red; <br>
                     border-radius: 30px; <br>
-                    box-shadow: 41px 41px 82px #bebebe, <br>
+                    box-shadow: 41px 41px 82px #bebebe,
                     -41px -41px 82px #ffffff;
                 </code>
             </div>
@@ -31,7 +41,7 @@
     </div>
 
     <script>
-        document.getElementById('button').addEventListener("click", () =>{
+        document.getElementById('btn-copy').addEventListener("click", () =>{
             navigator.clipboard.writeText(document.querySelector("code").innerText);
         })
     </script>
